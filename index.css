@@ -1,0 +1,65 @@
+:root {
+  --Canary_Light: #e9ff97;
+  --Caramel_Light: #ffd18e;
+  --Mona_Lisa_Light: #ffa38f;
+  --Pale_Magenta_Light: #ff7ee2;
+
+  --Sapphire_Dark: #030637;
+  --Persian_Indigo_Dark: #3c0753;
+  --Tyrian_Purple_Dark: #720455;
+  --Jazzberry_Jam_Dark: #910a67;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 180px;
+  margin: auto;
+  display: grid;
+  text-align: center;
+  margin-top: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 7px;
+  font-size: larger;
+}
+.main p:last-child {
+  margin-left: -15px;
+}
+.button {
+  border-radius: 20px;
+  padding: 2px;
+  width: 60px;
+  height: 25px;
+  border: none;
+}
+
+#icon {
+  transition: 0.5s ease;
+}
+.light-mode #icon {
+  color: var(--Caramel_Light);
+  margin-left: -30px;
+}
+
+.dark-mode #icon {
+  color: var(--Sapphire_Dark);
+  margin-left: 30px;
+}
+.light-mode {
+  background-color: var(--Caramel_Light);
+  color: black;
+}
+.dark-mode {
+  background-color: var(--Sapphire_Dark);
+  color: var(--Jazzberry_Jam_Dark);
+}
+
+.light-mode .button {
+  background-color: var(--Tyrian_Purple_Dark);
+}
+.dark-mode .button {
+  background-color: var(--Persian_Indigo_Dark);
+}
